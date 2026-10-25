@@ -1,0 +1,63 @@
+.asia {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.asia__title {
+  font-size: 38px;
+  color: #702b29;
+  margin: 0 0 20px;
+}
+
+.asia__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 600px) {
+  .asia {
+    padding: 40px 15px;
+  }
+
+  .asia__title {
+    font-size: 28px;
+  }
+
+  .asia__description {
+    font-size: 16px;
+  }
+}
+
+.asia__packages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.asia__card {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.asia__card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .asia__card {
+    max-width: 100%;
+  }
+}

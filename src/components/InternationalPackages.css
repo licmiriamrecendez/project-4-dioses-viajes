@@ -1,0 +1,136 @@
+.international {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.international__title {
+  font-size: 38px;
+  color: #702b29;
+  margin: 0 0 20px;
+}
+
+.international__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .international {
+    padding: 40px 15px;
+  }
+
+  .international__title {
+    font-size: 28px;
+  }
+
+  .international__description {
+    font-size: 16px;
+  }
+}
+
+/* Barra de navegación por continentes */
+.international__continents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Botones de continentes */
+.international__continents a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 16px 28px;
+  background-color: #702b29;
+  color: #ffffff;
+  border: 2px solid #c5a46d;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.international__continents a:hover {
+  background-color: #94413d;
+  transform: translateY(-3px);
+}
+
+.international__continents a:focus-visible {
+  outline: 3px solid #c5a46d;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .international__continents {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .international__continents a {
+    min-width: 0;
+  }
+}
+
+/* Barra de navegación por continentes */
+.international__continents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Botones de continentes */
+.international__continents a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 16px 28px;
+  background-color: #702b29;
+  color: #ffffff;
+  border: 2px solid #c5a46d;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.international__continents a:hover {
+  background-color: #94413d;
+  transform: translateY(-3px);
+}
+
+.international__continents a:focus-visible {
+  outline: 3px solid #c5a46d;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .international__continents {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .international__continents a {
+    min-width: 0;
+  }
+}
