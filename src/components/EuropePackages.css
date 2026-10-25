@@ -1,0 +1,104 @@
+.europe {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.europe__title {
+  font-size: 38px;
+  color: #702b29;
+  margin: 0 0 20px;
+}
+
+.europe__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  margin: 0 auto 40px;
+  max-width: 700px;
+}
+
+@media (max-width: 600px) {
+  .europe {
+    padding: 40px 15px;
+  }
+
+  .europe__title {
+    font-size: 28px;
+  }
+
+  .europe__description {
+    font-size: 16px;
+  }
+}
+
+/* Contenedor de paquetes */
+.europe__packages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* Tarjeta de cada viaje */
+.europe__card {
+  background-color: #ffffff;
+  border: 1px solid #e5d5c0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.europe__card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen del paquete */
+.europe__card-image {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  background-color: #f5efe7;
+}
+
+/* Información del viaje */
+.europe__card-content {
+  padding: 20px;
+}
+
+.europe__card-content h2 {
+  color: #702b29;
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.europe__card-content p {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Diseño para tabletas */
+@media (max-width: 900px) {
+  .europe__packages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Diseño para celulares */
+@media (max-width: 600px) {
+  .europe__packages {
+    grid-template-columns: 1fr;
+  }
+
+  .europe__card-image {
+    height: 400px;
+  }
+}

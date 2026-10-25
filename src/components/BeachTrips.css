@@ -1,0 +1,212 @@
+.beach {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.beach__title {
+  font-size: 38px;
+  color: #702b29;
+  margin-bottom: 20px;
+}
+
+.beach__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 600px) {
+  .beach {
+    padding: 40px 15px;
+  }
+
+  .beach__title {
+    font-size: 28px;
+  }
+
+  .beach__description {
+    font-size: 16px;
+  }
+}
+
+/* Contenedor de hoteles */
+.beach__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Tarjetas de hoteles */
+.beach__card {
+  background-color: #ffffff;
+  border: 1px solid #c5a46d;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  min-width: 0;
+  text-align: left;
+}
+
+.beach__card h2 {
+  color: #702b29;
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+
+.beach__destination,
+.beach__dates {
+  color: #555555;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+/* Contenedor de precios */
+.beach__prices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+/* Recuadros de precios */
+.beach__prices > div {
+  background-color: #f5efe7;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  min-width: 0;
+}
+
+.beach__prices span {
+  display: block;
+  color: #555555;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.beach__prices strong {
+  display: block;
+  color: #702b29;
+  font-size: 21px;
+  overflow-wrap: anywhere;
+}
+
+/* Promociones especiales */
+.beach__promotion {
+  background-color: #fff3d8;
+  border-left: 4px solid #c5a46d;
+  padding: 14px;
+  border-radius: 8px;
+  color: #702b29;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Transporte opcional */
+.beach__transport {
+  background-color: #f5efe7;
+  padding: 13px;
+  border-radius: 8px;
+  color: #702b29;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Condiciones de las tarifas */
+.beach__disclaimer {
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 18px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+  .beach__grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .beach__card {
+    padding: 18px;
+  }
+
+  .beach__card h2 {
+    font-size: 21px;
+  }
+
+  .beach__prices strong {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 380px) {
+  .beach__prices {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Botón de WhatsApp para cotizaciones */
+.beach__whatsapp {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #702b29;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.beach__whatsapp:hover {
+  background-color: #8e3b38;
+  transform: translateY(-2px);
+}
+
+.beach__whatsapp:focus-visible {
+  outline: 3px solid #c5a46d;
+  outline-offset: 3px;
+}
+
+/* Fotografías de los hoteles */
+.beach__image {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .beach__image {
+    height: 200px;
+  }
+}
+
+/* Destacar el precio total de 2 adultos */
+.beach__prices > div:last-child {
+  background-color: #702b29;
+  border: 2px solid #c5a46d;
+}
+
+.beach__prices > div:last-child span,
+.beach__prices > div:last-child strong {
+  color: #ffffff;
+}

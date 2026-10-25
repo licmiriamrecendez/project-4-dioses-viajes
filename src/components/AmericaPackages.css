@@ -1,0 +1,95 @@
+.america {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.america__title {
+  font-size: 38px;
+  color: #702b29;
+  margin: 0 0 20px;
+}
+
+.america__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 600px) {
+  .america {
+    padding: 40px 15px;
+  }
+
+  .america__title {
+    font-size: 28px;
+  }
+
+  .america__description {
+    font-size: 16px;
+  }
+}
+
+/* Contenedor de paquetes de América */
+.america__packages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Tarjeta del paquete */
+.america__card {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de Colombia */
+.america__card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Información del paquete */
+.america__card-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.america__card-content h2 {
+  color: #702b29;
+  font-size: 26px;
+  margin: 0 0 15px;
+}
+
+.america__card-content p {
+  color: #555555;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .america__card {
+    max-width: 100%;
+  }
+
+  .america__card-content {
+    padding: 18px;
+  }
+
+  .america__card-content h2 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,179 @@
+.promotions {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.promotions__title {
+  font-size: 38px;
+  color: #702b29;
+  margin: 0 0 20px;
+}
+
+.promotions__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 600px) {
+  .promotions {
+    padding: 40px 15px;
+  }
+
+  .promotions__title {
+    font-size: 28px;
+  }
+
+  .promotions__description {
+    font-size: 16px;
+  }
+}
+
+/* Contenedor de promociones */
+.promotions__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px;
+  align-items: start;
+}
+
+/* Tarjetas de promociones */
+.promotions__card {
+  background-color: #ffffff;
+  border: 1px solid #c5a46d;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.promotions__card h2 {
+  color: #702b29;
+  font-size: 23px;
+  margin: 20px 0 10px;
+}
+
+.promotions__card p {
+  color: #555555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Folletos completos, sin recortes */
+.promotions__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Precios destacados */
+.promotions__card .promotions__price {
+  color: #702b29;
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+  .promotions__grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .promotions__card {
+    padding: 15px;
+  }
+}
+
+/* Botón para ampliar los folletos */
+.promotions__image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.promotions__image-button:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Fondo oscuro de la ventana */
+.promotions__modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.88);
+  box-sizing: border-box;
+  cursor: zoom-out;
+}
+
+/* Folleto ampliado */
+.promotions__modal-image {
+  display: block;
+  max-width: 95%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: default;
+}
+
+/* Botón para cerrar */
+.promotions__modal-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 42px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.promotions__modal-close:hover {
+  color: #c5a46d;
+}
+
+/* Botón de WhatsApp de las promociones */
+.promotions__whatsapp {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 20px;
+  background-color: #702b29;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.promotions__whatsapp:hover {
+  background-color: #52201e;
+  transform: translateY(-2px);
+}
+
+.promotions__whatsapp:focus-visible {
+  outline: 3px solid #c5a46d;
+  outline-offset: 3px;
+}

@@ -1,0 +1,122 @@
+.bank {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.bank__title {
+  font-size: 38px;
+  color: #702b29;
+  margin: 0 0 20px;
+}
+
+.bank__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 600px) {
+  .bank {
+    padding: 40px 15px;
+  }
+
+  .bank__title {
+    font-size: 28px;
+  }
+
+  .bank__description {
+    font-size: 16px;
+  }
+}
+
+/* Contenedor de las formas de pago */
+.bank__methods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 30px auto 50px;
+  align-items: start;
+}
+
+.bank__column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Tarjetas de pago */
+.bank__method {
+  background-color: #ffffff;
+  border: 1px solid #e8d9c5;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  color: #702b29;
+  transition: transform 0.3s ease;
+}
+
+.bank__method:hover {
+  transform: translateY(-5px);
+}
+
+.bank__method h2 {
+  color: #702b29;
+  font-size: 21px;
+  margin: 15px 0;
+}
+
+.bank__method p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Botón de WhatsApp */
+.bank__whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #702b29;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.bank__whatsapp:hover {
+  background-color: #54201f;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+  .bank__methods {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bank__method {
+    padding: 25px 18px;
+  }
+}
+
+.bank__map {
+  margin-top: 20px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #e8d9c5;
+}
+
+.bank__map iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}

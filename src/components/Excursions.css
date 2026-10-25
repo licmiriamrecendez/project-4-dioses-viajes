@@ -1,0 +1,176 @@
+.excursions {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.excursions__title {
+  font-size: 38px;
+  color: #702b29;
+  margin-bottom: 20px;
+}
+
+.excursions__description {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .excursions {
+    padding: 40px 15px;
+  }
+
+  .excursions__title {
+    font-size: 28px;
+  }
+
+  .excursions__description {
+    font-size: 16px;
+  }
+}
+
+/* Contenedor de las excursiones */
+.excursions__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px;
+  margin-top: 45px;
+  align-items: start;
+}
+
+/* Tarjetas */
+.excursions__card {
+  background-color: #ffffff;
+  border: 1px solid #c5a46d;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.excursions__card h2 {
+  color: #702b29;
+  font-size: 23px;
+  margin: 20px 0 10px;
+}
+
+.excursions__card p {
+  color: #555555;
+  margin: 10px 0;
+}
+
+/* Folletos completos, sin recortes */
+.excursions__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Precios */
+.excursions__card .excursions__price {
+  color: #702b29;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Diseño para celulares */
+@media (max-width: 700px) {
+  .excursions__grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .excursions__card {
+    padding: 15px;
+  }
+}
+
+/* Botón para ampliar los folletos */
+.excursions__image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.excursions__image-button:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Fondo oscuro de la ventana */
+.excursions__modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.88);
+  box-sizing: border-box;
+  cursor: zoom-out;
+}
+
+/* Folleto ampliado */
+.excursions__modal-image {
+  display: block;
+  max-width: 95%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: default;
+}
+
+/* Botón para cerrar */
+.excursions__modal-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 42px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.excursions__modal-close:hover {
+  color: #c5a46d;
+}
+
+/* Botón de WhatsApp de las excursiones */
+.excursions__whatsapp {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 13px 20px;
+  background-color: #702b29;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.excursions__whatsapp:hover {
+  background-color: #52201e;
+  transform: translateY(-2px);
+}
+
+.excursions__whatsapp:focus-visible {
+  outline: 3px solid #c5a46d;
+  outline-offset: 3px;
+}
