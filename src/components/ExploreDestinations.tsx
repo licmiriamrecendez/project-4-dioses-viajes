@@ -88,16 +88,6 @@ function ExploreDestinations() {
             <article
   className="explore-destinations__card"
   key={country.name.common}
-  role="button"
-  tabIndex={0}
-  aria-label={`Ver detalles de ${country.name.common}`}
-  onClick={() => setSelectedCountry(country)}
-  onKeyDown={(event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      setSelectedCountry(country);
-    }
-  }}
 >
               <img
   src={country.flags.png}
@@ -121,10 +111,18 @@ function ExploreDestinations() {
                 <strong>Región:</strong> {country.region}
               </p>
 
-              
+            <button
+  type="button"
+  className="explore-destinations__details-button"
+  onClick={() => setSelectedCountry(country)}
+  aria-label={`Ver detalles de ${country.name.common}`}
+>
+  Ver detalles
+</button>
+         
 <a
   href={`https://wa.me/523310626088?text=${encodeURIComponent(
-    `Hola, me gustaría recibir información y una cotización para viajar a ${selectedCountry?.name.common ?? "este destino"} con 4 Dioses Viajes.`
+    `Hola, me gustaría recibir información y una cotización para viajar a ${country.name.common} con 4 Dioses Viajes.`
   )}`}
   target="_blank"
   rel="noopener noreferrer"
