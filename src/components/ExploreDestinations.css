@@ -208,3 +208,26 @@
   line-height: 1.4;
   text-align: center;
 }
+
+.explore-destinations__details-button {
+  display: inline-block;
+  margin: 12px auto 0;
+  padding: 10px 16px;
+  background-color: #702b29;
+  color: #ffffff;
+  border: 2px solid #c5a46d;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.explore-destinations__details-button:hover {
+  background-color: #91413e;
+}
+
+.explore-destinations__details-button:focus-visible {
+  outline: 3px solid #702b29;
+  outline-offset: 3px;
+}

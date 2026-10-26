@@ -78,4 +78,6 @@ https://github.com/licmiriamrecendez/project-4-dioses-viajes
 
 ## Sitio publicado
 
-Pendiente de agregar la URL de Vercel después del despliegue.
+La aplicación está disponible en Vercel:
+
+https://project-4-dioses-viajes.vercel.app

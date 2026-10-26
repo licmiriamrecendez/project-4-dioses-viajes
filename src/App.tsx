@@ -39,7 +39,6 @@ function App() {
         <Route path="/vuelos" element={<Flights />} />
         <Route path="/grupos" element={<Groups />} />
         <Route path="/explora-destinos" element={<ExploreDestinations />} />
-        <Route path="/nosotros" element={<About />} />
         <Route path="/sobre-la-autora" element={<AboutAuthor />} />
       </Routes>
 

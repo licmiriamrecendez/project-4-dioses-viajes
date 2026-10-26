@@ -1,4 +1,5 @@
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const team = [
   {
@@ -191,8 +192,8 @@ function About() {
         <div className="about__team">
   {team.slice(0, 1).map((member) => (
     <article className="about__member" key={member.email}>
-      <a
-  href="/sobre-la-autora"
+     <Link
+  to="/sobre-la-autora"
   aria-label="Conoce a Miriam, creadora del sitio web"
   title="Conoce a la desarrolladora"
 >
@@ -202,7 +203,7 @@ function About() {
     width="240"
     loading="lazy"
   />
-</a>
+</Link>
 <p>{member.role}</p>
       <a href={`mailto:${member.email}`}>
         {member.email}
